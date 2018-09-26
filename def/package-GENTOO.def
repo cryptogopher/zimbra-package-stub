@@ -1,0 +1,7 @@
+include $(DEF_ROOT)/package-rpm.def
+
+PKG_BUILD := rpmbuild -v --define "_topdir $$PWD" -ba --nodeps
+#PKG_EXTRACT := rpm -iv --nodeps --replacefiles
+PKG_EXTRACT := echo
+#PKG_PURGE := rpm -e --nodeps
+PKG_PURGE := echo
